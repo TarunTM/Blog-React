@@ -21,7 +21,7 @@ const BlogPage = () => {
         try{
             const response = await fetch(url);
             const data = await response.json();
-            console.log(data);
+            
             setBlog(data.blog);
             setRelatedBlogs(data.relatedBlogs);
         }

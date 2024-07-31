@@ -23,7 +23,7 @@ export function AppContextProvider({children}){
             url += `&category=${category}`;
         }
         
-        console.log(url);
+    
         try{
             const result = await fetch(url);
             const data = await result.json();
